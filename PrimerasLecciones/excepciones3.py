@@ -17,5 +17,5 @@ def evaluaEdad(edad):
     elif edad < 100:
         "Cuidate..."
 
-edad=(int(input("Introduce tu edad: ")))
+edad = (int(input("Introduce tu edad: ")))
 print(evaluaEdad(edad))

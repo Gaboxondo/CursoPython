@@ -2,13 +2,15 @@
 
 import math
 
+
 def calculaRaiz(num1):
     if num1 < 0:
         raise ValueError("El numero no puede ser negativo")
     else:
         return math.sqrt(num1)
 
-numero=(float(input("Introduce un numero: ")))
+
+numero = (float(input("Introduce un numero: ")))
 try:
     print(calculaRaiz(numero))
 except ValueError as error:
