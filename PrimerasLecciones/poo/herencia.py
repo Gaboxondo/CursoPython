@@ -40,8 +40,9 @@ class Moto(Vehiculo):
         print("Marca:", self.marca, "\nModelo:", self.modelo, "\nEn Marcha:", self.enmarcha, "\nAcelerando",
               self.acelera, "\nFrenando:", self.frena, "\nCaballito:",self.hcaballito)
 
-class VElectricos:
-    def __init__(self):
+class VElectricos(Vehiculo):
+    def __init__(self,marca,modelo):
+        super().__init__(marca,modelo)
         self.autonomia = 100
 
     def cargarEnergia(self):
@@ -61,7 +62,9 @@ print(miFurgoneta.carga(True))
 
 #Cuando hay HERENCIA MULTIPLE, se da preferencia la clase que se coloca primero
 #Esto realmente nunca lo hariamos asi, VElectricos deberia heredar de Vehiculos o algo asi
-class BicicletaElectrica(Vehiculo,VElectricos):
+class BicicletaElectrica(VElectricos,Vehiculo):
     pass
 
-miBici = BicicletaElectrica()
+print("")
+miBici = BicicletaElectrica("Orbea","HC130")
+miBici.estado()
