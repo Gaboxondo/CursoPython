@@ -1,7 +1,4 @@
-# Aqui vamos a ver como capturar la excepcion con un nombre e imprimir su mensaje
-
 import math
-
 
 def calculaRaiz(num1):
     if num1 < 0:
@@ -9,7 +6,7 @@ def calculaRaiz(num1):
     else:
         return math.sqrt(num1)
 
-
+#Aqui se ve como se puede capturar la excepcion dandole nombre
 numero = (float(input("Introduce un numero: ")))
 try:
     print(calculaRaiz(numero))
