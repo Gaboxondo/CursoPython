@@ -24,6 +24,8 @@ def numeroPulsado(num):
 
     global operacion
 
+    print("Numero pulsado:",num)
+    print("Operacion actual:", operacion)
     if operacion != "":
         numeroPantalla.set(num)
         operacion = ""
