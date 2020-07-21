@@ -1,0 +1,4 @@
+# --windowed es para que se vea solo una ventana y no una consola detras
+# --onefile es para que solo se cree un exe empaquetado
+# --icon es para el icono guay
+pyinstaler --windowed --onefile --icon=<nombre_icono>.ico <nombre_fichero_py>.py
