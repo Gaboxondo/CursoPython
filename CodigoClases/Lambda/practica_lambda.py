@@ -17,3 +17,8 @@ area_tringulo=lambda base,altura: (base*altura)/2
 
 print(area_tringulo(5,7))
 print(area_tringulo(9,6))
+
+destacar_valor=lambda comision:"¡{}! €".format(comision)
+
+comision_Ana=1233
+print(destacar_valor(comision_Ana))
